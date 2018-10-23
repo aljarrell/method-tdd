@@ -11,6 +11,10 @@ class My_test < Minitest::Test
     assert_equal(0, index("hello",'h'))
   end
 
+  def test_for_rindex_one
+    assert_equal(1, index("hello",'e'))
+  end 
+
 
 
 
