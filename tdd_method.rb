@@ -8,7 +8,7 @@ class My_test < Minitest::Test
   end
 
   def test_for_rindex_in_hello
-    assert_equal(0, h)
+    assert_equal(0, index("hello",'h'))
   end
 
 
