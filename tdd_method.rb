@@ -16,7 +16,7 @@ class My_test < Minitest::Test
   end
 
   def test_for_what_position_is_o
-    assert_equal(3, index("hello",?o))
+    assert_equal(4, index("hello",?o))
   end
 
 
