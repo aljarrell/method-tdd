@@ -28,7 +28,7 @@ class My_test < Minitest::Test
   end
 
   def test_for_squeeze
-    assert_equal(h, hh.squeeze)
+    assert_equal("h", squeeze("hh"))
   end
 
 
