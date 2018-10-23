@@ -39,5 +39,8 @@ class My_test < Minitest::Test
     assert_equal("helo my name is alan jarel", squeeze("hello my name is alan jarrell"))
   end
 
+  def test_numbers_in_string
+    assert_equal("1", squeeze("11111"))
+  end
 
 end
