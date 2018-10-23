@@ -31,6 +31,9 @@ class My_test < Minitest::Test
     assert_equal("h", squeeze("hh"))
   end
 
+  def test_bigger_string
+    assert_equal("h", squeeze("hhhhhhhhhh"))
+  end 
 
 
 
