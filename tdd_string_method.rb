@@ -1,5 +1,5 @@
 require "minitest/autorun"
-require_relative "method.rb"
+require_relative "string_method.rb"
 
 class My_test < Minitest::Test
 
@@ -22,6 +22,12 @@ class My_test < Minitest::Test
   def test_with_different_string
     assert_equal(0, index("hello world", 'h'))
   end
+
+  def test_for_space
+    assert_equal(5, index("hello world", ' '))
+  end
+
+
 
 
 end
