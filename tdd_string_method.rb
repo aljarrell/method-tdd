@@ -27,6 +27,10 @@ class My_test < Minitest::Test
     assert_equal(5, index("hello world", ' '))
   end
 
+  def test_for_squeeze
+    assert_equal(h, hh.squeeze)
+  end
+
 
 
 
