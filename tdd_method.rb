@@ -13,9 +13,11 @@ class My_test < Minitest::Test
 
   def test_for_rindex_one
     assert_equal(1, index("hello",'e'))
-  end 
+  end
 
-
+  def test_for_what_position_is_o
+    assert_equal(3, index("hello",?o))
+  end
 
 
 end
