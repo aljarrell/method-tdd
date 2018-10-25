@@ -19,5 +19,9 @@ class My_test < Minitest::Test
     assert_equal([1, 2], glue())
   end
 
+  def test_for_different_arrays
+    assert_equal([3,4], glue())
+  end
+
 
 end
