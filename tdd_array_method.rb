@@ -27,8 +27,12 @@ class My_test < Minitest::Test
     assert_equal([1,2,3,4,5,6], glue([1,2,3], [4,5,6]))
   end
 
-  def test_strings_in_arrays_concat
-    assert_equal(["hello", "world"], glue(["hello"], ["world"]))
+  def test_for_multidimensional
+    assert_equal([1,2,3, [4], [5], [6]], glue([1,2,3], [[4], [5], [6]]))
+  end
+
+  def test_if_argument_isnt_array
+    assert_equal("invalid", glue([1,2,3], "123"))
   end
 
   def test_join_method
@@ -44,12 +48,12 @@ class My_test < Minitest::Test
   end
 
   def test_for_argument_not_being_array
-    assert_equal("invalid input", tape(123))
+    assert_equal("123", tape(123))
   end
 
   def test_argument_as_string
-    assert_equal("invalid input", tape("hello"))
-  end 
+    assert_equal("hello", tape("hello"))
+  end
 
 
 end
