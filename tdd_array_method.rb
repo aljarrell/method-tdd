@@ -39,5 +39,9 @@ class My_test < Minitest::Test
     assert_equal("1234", tape(["1", "2", "3", "4"]))
   end
 
+  def test_for_integers
+    assert_equal("invalid input", tape([1234]))
+  end
+
 
 end
