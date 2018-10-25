@@ -47,5 +47,9 @@ class My_test < Minitest::Test
     assert_equal("invalid input", tape(123))
   end
 
+  def test_argument_as_string
+    assert_equal("invalid input", tape("hello"))
+  end 
+
 
 end
