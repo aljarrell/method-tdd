@@ -35,6 +35,9 @@ class My_test < Minitest::Test
     assert_equal("hello", tape(["h", "e", "l", "l", "o"]))
   end
 
+  def test_join_with_number_strings
+    assert_equal("1234", tape(["1", "2", "3", "4"]))
+  end
 
 
 end
