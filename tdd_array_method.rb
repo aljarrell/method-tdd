@@ -16,8 +16,8 @@ class My_test < Minitest::Test
   end
 
   def test_for_concat_arrays
-    assert_equal([1, 2], glue([1], [2]))
-  end 
+    assert_equal([1, 2], glue())
+  end
 
 
 end
