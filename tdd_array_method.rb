@@ -32,7 +32,9 @@ class My_test < Minitest::Test
   end
 
   def test_join_method
-    assert_equal(["hello"], tape(["h", "e", "l", "l", "o"]))
+    assert_equal("hello", tape(["h", "e", "l", "l", "o"]))
   end
+
+
 
 end
