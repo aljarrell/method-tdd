@@ -28,7 +28,7 @@ class My_test < Minitest::Test
   end
 
   def test_strings_in_arrays
-    assert_equal(["hello world"], glue(["hello"], ["world"]))
+    assert_equal(["hello", "world"], glue(["hello"], ["world"]))
   end
 
 end
