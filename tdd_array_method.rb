@@ -23,5 +23,9 @@ class My_test < Minitest::Test
     assert_equal([3,4], glue([3],[4]))
   end
 
+  def test_for_larger_arrays
+    assert_equal([1,2,3,4,5,6], glue([1,2,3], [4,5,6]))
+  end
+
 
 end
