@@ -11,5 +11,9 @@ class My_test < Minitest::Test
     assert_equal([],[])
   end
 
+  def test_for_one_in_array
+    assert_equal([1], [1])
+  end 
+
 
 end
