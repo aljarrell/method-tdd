@@ -40,7 +40,11 @@ class My_test < Minitest::Test
   end
 
   def test_for_integers
-    assert_equal("invalid input", tape([1234]))
+    assert_equal("1234", tape([1234]))
+  end
+
+  def test_for_argument_not_being_array
+    assert_equal("invalid input", tape(123))
   end
 
 
