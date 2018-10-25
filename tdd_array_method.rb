@@ -16,11 +16,11 @@ class My_test < Minitest::Test
   end
 
   def test_for_concat_arrays
-    assert_equal([1, 2], glue())
+    assert_equal([1, 2], glue([1],[2]))
   end
 
   def test_for_different_arrays
-    assert_equal([3,4], glue())
+    assert_equal([3,4], glue([3],[4]))
   end
 
 

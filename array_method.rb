@@ -1,5 +1,5 @@
 #Array methods concat and join
 
-def glue()
-  [1].concat([2])
-end 
+def glue(arr1, arr2)
+  arr1.concat(arr2)
+end
