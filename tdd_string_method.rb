@@ -11,9 +11,9 @@ class My_test < Minitest::Test
     assert_equal("hello", index("hello"))
   end
 
-  # def test_for_rindex_one
-  #   assert_equal(1, index("hello", 'e'))
-  # end
+  def test_for_argument_not_being_string
+    assert_equal("invalid", index(1))
+  end
   #
   # def test_for_what_position_is_o
   #   assert_equal(4, index("hello", ?o))
