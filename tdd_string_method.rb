@@ -14,11 +14,11 @@ class My_test < Minitest::Test
   def test_for_argument_not_being_string
     assert_equal("invalid", index(1))
   end
-  #
-  # def test_for_what_position_is_o
-  #   assert_equal(4, index("hello", ?o))
-  # end
-  #
+
+  def test_for_array_argument
+    assert_equal("invalid", index([1]))
+  end
+
   # def test_with_different_string
   #   assert_equal(0, index("hello world", 'h'))
   # end
