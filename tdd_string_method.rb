@@ -19,14 +19,10 @@ class My_test < Minitest::Test
     assert_equal("invalid", index([1]))
   end
 
-  # def test_with_different_string
-  #   assert_equal(0, index("hello world", 'h'))
-  # end
-  #
-  # def test_for_space
-  #   assert_equal(5, index("hello world", ' '))
-  # end
-  #
+  def test_for_changing_string_to_array
+    assert_equal(Array, index("hello".class))
+  end
+
   # def test_for_squeeze
   #   assert_equal("h", squeeze("hh"))
   # end
