@@ -52,7 +52,7 @@ class My_test < Minitest::Test
   # end
 
   def test_for_spaces
-    assert_equal("yellow l", reduce("yellow  l"))
+    assert_equal("yelow l", reduce("yellow  l"))
   end
 
   # def test

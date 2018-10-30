@@ -42,17 +42,26 @@ end
 def reduce(double)
   arr = []
   str = ""
-  double.length.times do |item|
-    p "double: #{double[item]}"
-    p "double_minus: #{double[item - 1]}"
-    if double[item] == double[item - 1]
+  double = double.split(//)
+  double.each_with_index do |item, position|
+    # p "double: #{item[position]}"
+    # p "double_minus: #{item[position - 1]}"
+    #puts "double no delete: #{double}"
+    if double[position] == double[position - 1]
+      #puts "delete at position: #{position}"
+       double.delete_at(position)
+       #puts "doubleeee delete: #{double}"
 
-  #   arr << double[item]
-  # end
-  #   arr.uniq!
-  #   arr.each do |item|
-  #     str << item
+         # double.each do |item|
+         #   puts "item: #{item}"
+         #  str << item
+         # end
     end
   end
-  return str
+  # double.each do |item|
+  #   puts "item: #{str}"
+  #   str << item
+  #  end
+
+  return double.join
 end
