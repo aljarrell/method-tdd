@@ -17,4 +17,10 @@ class My_test < Minitest::Test
     assert_equal(Hash, merge(h1, h2).class)
   end
 
+  def test_for_equal
+    h1 = {1 => "A"}
+    h2 = {2 => "B"}
+    assert_equal({1 => "A", 2 => "B"}, merge(h1, h2))
+  end
+
 end
