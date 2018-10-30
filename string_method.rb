@@ -1,14 +1,17 @@
 #String methods rindex and squeeze
 
-def index(string)
+def index(string, letter)
   if string.class != String
     return "invalid"
   else
-    p string 
-  # counter = 0
-  # position = counter
-  # string.length.times do
-  #   counter += 1
+    counter = 0
+    string.length.times do |item|
+      if letter == string[item]
+        counter << item
+      end
+
+    end
+    return counter 
   end
 
 

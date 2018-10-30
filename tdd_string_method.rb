@@ -7,21 +7,25 @@ class My_test < Minitest::Test
     assert_equal(1,1)
   end
 
-  def test_for_string_arg
-    assert_equal("hello", index("hello"))
+  def test_for_zero
+    assert_equal(0, index("hello", "h"))
   end
 
-  def test_for_argument_not_being_string
-    assert_equal("invalid", index(1))
-  end
-
-  def test_for_array_argument
-    assert_equal("invalid", index([1]))
-  end
-
-  def test_for_changing_string_to_array
-    assert_equal(Array, index("hello".class))
-  end
+  # def test_for_string_arg
+  #   assert_equal(["hello", index("hello"))
+  # end
+  #
+  # def test_for_argument_not_being_string
+  #   assert_equal("invalid", index(1))
+  # end
+  #
+  # def test_for_array_argument
+  #   assert_equal("invalid", index([1]))
+  # end
+  #
+  # def test_for_changing_string_to_array
+  #   assert_equal(Array, index("hello"))
+  # end
 
   # def test_for_squeeze
   #   assert_equal("h", squeeze("hh"))
