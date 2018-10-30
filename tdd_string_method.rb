@@ -55,6 +55,11 @@ class My_test < Minitest::Test
     assert_equal("yelow l", reduce("yellow  l"))
   end
 
+  def test_for_first_and_last
+    assert_equal("lemons l", reduce("lemons   l"))
+  end
+
+
   # def test
   #   assert_equal()
   # end

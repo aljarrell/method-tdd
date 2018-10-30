@@ -44,24 +44,13 @@ def reduce(double)
   str = ""
   double = double.split(//)
   double.each_with_index do |item, position|
-    # p "double: #{item[position]}"
-    # p "double_minus: #{item[position - 1]}"
-    #puts "double no delete: #{double}"
-    if double[position] == double[position - 1]
-      #puts "delete at position: #{position}"
-       double.delete_at(position)
-       #puts "doubleeee delete: #{double}"
-
-         # double.each do |item|
-         #   puts "item: #{item}"
-         #  str << item
-         # end
-    end
+    if position == 0
+      arr << item
+    else
+      if double[position] != double[position - 1]
+      arr << item
+      end
+   end
   end
-  # double.each do |item|
-  #   puts "item: #{str}"
-  #   str << item
-  #  end
-
-  return double.join
+  return arr.join
 end
