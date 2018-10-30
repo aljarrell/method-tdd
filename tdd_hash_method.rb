@@ -11,4 +11,6 @@ class My_test < Minitest::Test
     assert_equal({},{})
   end
 
+  def test_
+
 end
